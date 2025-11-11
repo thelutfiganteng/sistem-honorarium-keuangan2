@@ -24,7 +24,7 @@ export default function Header() {
     <header className="h-16 border-b bg-card flex items-center justify-between px-6">
       <div className="flex items-center gap-4">
         <h2 className="text-lg font-semibold text-foreground">
-          Sistem Perhitungan Honorarium
+          Sistem Perhitungan Pembayaran
         </h2>
       </div>
       

@@ -334,15 +334,15 @@ export default function Tarif() {
       <div className="space-y-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold">Perhitungan Insentif Honorarium</h1>
+            <h1 className="text-3xl font-bold">Pembayaran</h1>
             <p className="text-muted-foreground mt-1">
-              Kelola perhitungan insentif berdasarkan jabatan dan golongan
+              Kelola perhitungan pembayaran 
             </p>
           </div>
           {canCreate && (
             <Button onClick={handleOpenDialog} className="gap-2">
               <Plus className="h-4 w-4" />
-              Tambah Perhitungan
+              Tambah data
             </Button>
           )}
         </div>
@@ -462,7 +462,7 @@ export default function Tarif() {
                     <SelectContent>
                       {pegawaiList.map((pegawai) => (
                         <SelectItem key={pegawai.id} value={pegawai.id}>
-                          {pegawai.nama} - Gol. {pegawai.golongan}
+                          {pegawai.nama} - {pegawai.golongan}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -489,7 +489,7 @@ export default function Tarif() {
                   </Select>
                 </div>
 
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <Label htmlFor="golongan">Golongan</Label>
                   <Select
                     value={formData.golongan}
@@ -506,7 +506,7 @@ export default function Tarif() {
                       <SelectItem value="1">Golongan 1</SelectItem>
                     </SelectContent>
                   </Select>
-                </div>
+                </div> */}
 
                 <div className="space-y-2">
                   <Label htmlFor="jumlah_hari">Jumlah Hari</Label>
