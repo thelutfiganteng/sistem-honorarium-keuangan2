@@ -32,10 +32,10 @@ const menuItems = [
     roles: ['super_admin', 'admin_kepegawaian'] 
   },
   { 
-    label: 'Pembayaran',//change into tarif pembayaran 
-    href: '/tarif', 
-    icon: DollarSign, 
-    roles: ['super_admin', 'admin_keuangan', 'admin_jurusan', 'admin_kepegawaian'] 
+    label: 'Tarif Honorarium', 
+    href: '/pembayaran', 
+    icon: CreditCard, 
+    roles: ['super_admin', 'admin_kepegawaian', 'admin_jurusan', 'admin_keuangan'] 
   },
   { 
     label: 'Kegiatan', 
@@ -44,10 +44,10 @@ const menuItems = [
     roles: ['super_admin', 'admin_kepegawaian', 'admin_jurusan', 'admin_keuangan'] 
   },
   { 
-    label: 'Tarif Honorarium', 
-    href: '/pembayaran', 
-    icon: CreditCard, 
-    roles: ['super_admin', 'admin_kepegawaian', 'admin_jurusan', 'admin_keuangan'] 
+    label: 'Pembayaran',//change into tarif pembayaran 
+    href: '/tarif', 
+    icon: DollarSign, 
+    roles: ['super_admin', 'admin_keuangan', 'admin_jurusan', 'admin_kepegawaian'] 
   },
   { 
     label: 'Laporan', 
