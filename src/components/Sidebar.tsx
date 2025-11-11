@@ -32,7 +32,7 @@ const menuItems = [
     roles: ['super_admin', 'admin_kepegawaian'] 
   },
   { 
-    label: 'Tarif Honorarium', 
+    label: 'Pembayaran',//change into tarif pembayaran 
     href: '/tarif', 
     icon: DollarSign, 
     roles: ['super_admin', 'admin_keuangan', 'admin_jurusan', 'admin_kepegawaian'] 
@@ -44,7 +44,7 @@ const menuItems = [
     roles: ['super_admin', 'admin_kepegawaian', 'admin_jurusan', 'admin_keuangan'] 
   },
   { 
-    label: 'Pembayaran', 
+    label: 'Tarif Honorarium', 
     href: '/pembayaran', 
     icon: CreditCard, 
     roles: ['super_admin', 'admin_kepegawaian', 'admin_jurusan', 'admin_keuangan'] 

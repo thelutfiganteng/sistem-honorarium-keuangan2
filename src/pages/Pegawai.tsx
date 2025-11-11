@@ -365,7 +365,7 @@ export default function Pegawai() {
                   required
                 />
               </div>
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <Label htmlFor="golongan">Golongan</Label>
                 <Input
                   id="golongan"
@@ -375,7 +375,27 @@ export default function Pegawai() {
                   }
                   required
                 />
+              </div> */}
+              <div className="space-y-2">
+                <Label htmlFor="golongan">Golongan</Label>
+                <Select
+                  value={formData.golongan}
+                  onValueChange={(value) =>
+                    setFormData({ ...formData, golongan: value })
+                  }
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Pilih golongan" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Golongan 4">Golongan 4</SelectItem>
+                    <SelectItem value="Golongan 3">Golongan 3</SelectItem>
+                    <SelectItem value="Golongan 2">Golongan 2</SelectItem>
+                    <SelectItem value="Golongan 1">Golongan 1</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
+
               <div className="space-y-2">
                 <Label htmlFor="jurusan">Jurusan</Label>
                 <Select

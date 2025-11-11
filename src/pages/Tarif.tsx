@@ -502,7 +502,8 @@ export default function Tarif() {
                     <SelectContent>
                       <SelectItem value="4">Golongan 4</SelectItem>
                       <SelectItem value="3">Golongan 3</SelectItem>
-                      <SelectItem value="1-2">Golongan 1 dan 2</SelectItem>
+                      <SelectItem value="2">Golongan 2</SelectItem>
+                      <SelectItem value="1">Golongan 1</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
